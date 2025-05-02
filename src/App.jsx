@@ -20,6 +20,11 @@ import UpdateProduct from './pages/admin/page/UpdateProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Allproducts from './pages/allproducts/Allproducts';
+import About from './pages/about/About';
+import ReturnPolicy from './pages/returnpolicy/returnPolicy'
+import Contact from './pages/contact/Contact';
+import PrivacyPolicy from './pages/privacy/PrivacyPolicy'
+
 
 function App() {
   return (
@@ -28,6 +33,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/allproducts" element={<Allproducts />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/returnpolicy" element={<ReturnPolicy />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/order" element={
             <ProtectedRoute>
               <Order />
